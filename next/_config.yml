@@ -15,7 +15,8 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: http://yoursite.com
 root: /
-permalink: :year/:month/:day/:translate_title.html/
+#permalink: :year/:month/:day/:title/
+permalink: :year/:month/:day/:translate_title.html
 permalink_defaults:
 
 # Directory
@@ -75,11 +76,19 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
+translate_title:
+  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
+  is_need_proxy: false     # true | false
+  # proxy_url: http://localhost:50018 # Your proxy_url
+  # youdao_api_key: '' # Your youdao_api_key
+  # youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
+  # baidu_appid: '' # Your baidu_appid
+  # baidu_appkey: '' # Your baidu_appkey
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repo: huanghaibin@139.199.206.208:/data/huanghaibin/product/git/hexoBlog
+  branch: master
 
-translate_title:
-  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
-  is_need_proxy: false
