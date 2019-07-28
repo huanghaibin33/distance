@@ -11,6 +11,7 @@ tags:
 ---
 ### 为什么要用context
 我们知道在golang 实现并发是通过goroutine 的方式，但在创建一个goroutine 时，并不会返回一个类似pid 的进程号，因此我们无法从外部去终止一个goroutine，只能通过WaitGroup 等待goroutine 执行完。这样会带来什么样的问题呢？我们先来看一个例子：
+<!-- more -->
 假设有一个用户请求，并发调用了下游的两个服务（RPC1，RPC2），然后再组合内容返回给用户。
 正常情况下，两个RPC 调用都成功，如下图所示
 <img src="https://public-1251890033.cos.ap-guangzhou.myqcloud.com/blog/go/context_normal.png" width="50%" height="50%">
