@@ -302,3 +302,7 @@ func WithDeadline(parent Context, d time.Time) (Context, CancelFunc) {
 1. Context 是线程安全的，可以放心的在多个goroutine 中传递
 1. 可以把一个Context 对象传递给任意个数的gorotuine，对它执行取消操作时，所有goroutine 都会接收到取消信号
 1. 在使用withCancel 等可cancel 的函数后，应立即调用defer cancel()
+
+### 参考资料
+1. [context.go 源码](https://golang.org/pkg/context/)
+1. [视频笔记：如何正确使用 Context - Jack Lindamood](https://blog.lab99.org/post/golang-2017-10-27-video-how-to-correctly-use-package-context.html)
