@@ -17,6 +17,8 @@ tags:
 1. 非叶子结点的左指针指向小于其关键字的子树，右指针指向大于其关键字的子树
 <img src="https://public-1251890033.cos.ap-guangzhou.myqcloud.com/blog/tree/bst.png" width="50%" height="50%">
 
+<!-- more -->
+
 ### 平衡二叉树
 平衡二叉树是平衡二叉查找树的简称，也称AVL树
 1. 首先是二叉查找树
