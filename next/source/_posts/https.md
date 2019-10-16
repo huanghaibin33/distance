@@ -9,7 +9,7 @@ tags:
 - 非对称加密
 ---
 
-HTTPS的协议是由HTTP协议和SSL/TLS协议组成。HTTP协议就不用讲了，而SSL/TLS就是负责加密解密(可参考{% post_link cryptography-basis 密码学基础%})等安全处理的模块，所以HTTPS的核心在SSL/TLS上面。
+HTTPS的协议是由HTTP协议和SSL/TLS协议组成。[HTTP](https://www.cnblogs.com/qdhxhz/p/8468913.html)协议就不用讲了，而SSL/TLS就是负责加密解密(可参考{% post_link cryptography-basis 密码学基础%})等安全处理的模块，所以HTTPS的核心在SSL/TLS上面。
 整个通信如下：
 * 浏览器发起往服务器的443端口发起请求，请求携带了浏览器支持的加密算法和哈希算法。
 * 服务器收到请求，选择浏览器支持的加密算法和哈希算法。
